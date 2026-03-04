@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "run": "jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 notebook.ipynb --stdout",
+      "name": "Test Notebook Execution",
+      "input": "",
+      "setup": "",
+      "output": "",
+      "points": 10,
+      "timeout": 90,
+      "comparison": "exact"
+    },
+    {
+      "run": "jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 notebook.ipynb --stdout",
+      "name": "Test Import Statements",
+      "input": "",
+      "setup": "",
+      "output": "Libraries imported successfully!",
+      "points": 20,
+      "timeout": 90,
+      "comparison": "included"
+    },
+    {
+      "run": "jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 notebook.ipynb --stdout",
+      "name": "Test Image Loading",
+      "input": "",
+      "setup": "",
+      "output": "Image 'sample.jpg' loaded successfully!",
+      "points": 20,
+      "timeout": 90,
+      "comparison": "included"
+    },
+    {
+      "run": "jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 notebook.ipynb --stdout",
+      "name": "Test Image Type and Shape",
+      "input": "",
+      "setup": "",
+      "output": "Type: <class 'numpy.ndarray'>",
+      "points": 20,
+      "timeout": 90,
+      "comparison": "included"
+    },
+    {
+      "run": "jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 notebook.ipynb --stdout",
+      "name": "Test Image Conversion",
+      "input": "",
+      "setup": "",
+      "output": "",
+      "points": 15,
+      "timeout": 90,
+      "comparison": "exact"
+    },
+    {
+      "run": "jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 notebook.ipynb --stdout",
+      "name": "Test Image Display",
+      "input": "",
+      "setup": "",
+      "output": "",
+      "points": 15,
+      "timeout": 90,
+      "comparison": "exact"
+    }
+  ]
+}
